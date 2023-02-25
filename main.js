@@ -12,6 +12,7 @@ class Estudiante {
 
   // setter
   set setMatricula(curso) {
+    console.log(curso);
     this.cursosMatriculados.push(curso);
   }
 
@@ -51,6 +52,7 @@ class Estudiante {
 const andy = new Estudiante('Andy', 'Smith', '1990-10-30', 'arq-0001', false, 'Arquitectura');
 andy.setMatricula = 'Introducción a la pintura';
 andy.setMatricula = 'Generales';
-//console.log(andy.getMatriculas);
+console.log(andy.getMatriculas);
 andy.setRetirarMatricula = 'Generales'; //como eliminar
+andy.setRetirarMatricula = 'Introducción a la pintura'; //como eliminar
 console.log(andy.getRetirarMatriculas);
